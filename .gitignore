@@ -1,0 +1,4 @@
+#gitignore nordemodules
+node_modules/
+image/
+package-lock.json

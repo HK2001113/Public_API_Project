@@ -1,0 +1,168 @@
+/* Global resets */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f7f7f7;
+    color: #333;
+}
+
+/* Navbar Styles */
+.navbar {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: #333;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navbar .logo {
+    color: #fff;
+    font-size: 24px;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+}
+
+.nav-links li {
+    margin-left: 20px;
+}
+
+.nav-links a {
+    color: #ff9900;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+.nav-links a.active {
+    font-weight: bold;
+    color: #ff9900;
+}
+
+/* Hero Section */
+.hero {
+    padding: 80px 20px 40px;
+    text-align: center;
+    background-color: #0099cc;
+    color: #fff;
+}
+
+.hero h1 {
+    font-size: 36px;
+}
+
+.hero p {
+    font-size: 18px;
+}
+
+/* Mood-Based Section */
+.mood-section {
+    padding: 40px 20px;
+    text-align: center;
+}
+
+.mood-selector {
+    margin-bottom: 20px;
+}
+
+.mood-btn {
+    background-color: #ffcc00;
+    border: none;
+    padding: 10px 20px;
+    margin: 5px;
+    cursor: pointer;
+}
+
+.mood-btn:hover {
+    background-color: #ffaa00;
+}
+
+.content-card {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+
+.content-card p {
+    margin-bottom: 20px;
+    margin-top: 10px;
+}
+
+
+.content-card button {
+    background-color: #28a745;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+}
+
+.content-card button:hover {
+    background-color: #218838;
+}
+
+/* Crypto Prices Section */
+.crypto-section {
+    padding: 40px 20px;
+    text-align: center;
+}
+
+.crypto-ticker {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+}
+
+.crypto-item {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    width: 150px;
+}
+
+.crypto-item img {
+    width: 50px;
+    height: 50px;
+    margin-bottom: 10px;
+}
+
+.crypto-item p {
+    font-size: 18px;
+    color: #333;
+}
+
+/* Footer Styles */
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+/* Media Queries */
+@media (max-width: 768px) {
+.crypto-ticker {
+    flex-direction: column;
+}
+
+.crypto-item {
+    width: auto;
+    margin-bottom: 20px;
+}
+}

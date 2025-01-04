@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="/css/style.css">
+<title>Dashboard</title>
+</head>
+<body>
+
+<!-- Navigation Bar -->
+<header>
+    <nav class="navbar">
+    <div class="logo">Dashboard</div>
+    <ul class="nav-links">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#crypto-prices">Crypto Prices</a></li>
+        <li><a href="#advice">Advice</a></li>
+        <li><a href="#jokes">Jokes</a></li>
+    </ul>
+    </nav>
+</header>
+
+<!-- Hero Section -->
+<section id="home" class="hero">
+    <h1>Welcome to the Multifunctional Dashboard</h1>
+    <p>Get jokes, advice, and live cryptocurrency prices all in one place!</p>
+</section>
+
+<!-- Mood-Based Section -->
+<section id="advice-jokes" class="mood-section">
+    <div class="content-card">
+    <h3>A random joke for programmers:</h3>
+    <p><%= Joke %></p> <!-- Dynamic placeholder for joke -->
+    <h3>A piece of advice:</h3>
+    
+    <p><%= advices %></p> <!-- Dynamic placeholder for advice -->
+    
+    <form action="/refresh" method="get">
+        <button id="refresh" type="submit" >Refresh Content</button>
+    </form>
+
+    </div>
+</section>
+
+<!-- Crypto Prices Section -->
+<section id="crypto-prices" class="crypto-section">
+    <h2>Live Cryptocurrency Prices</h2>
+    <div class="crypto-ticker">
+    <div class="crypto-item">
+        <img src="/image/bitcoin.jpeg" alt="Bitcoin">
+        <p>Bitcoin: <%= cryptobitcoin %></p>
+    </div>
+    <div class="crypto-item">
+        <img src="/image/ethereum.jpeg" alt="Ethereum">
+        <p>Ethereum: <%= cryptoethereum %></p>
+    </div>
+    </div>
+</section>
+
+<!-- Footer -->
+<footer>
+    <p>API Sources: CoinGecko, JOKE, Advice API</p>
+    <p>Project Credits: Hazique Hussain Khan </p>
+</footer>
+
+</body>
+</html>
